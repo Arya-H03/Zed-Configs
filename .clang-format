@@ -1,0 +1,74 @@
+# clang-format configuration file
+# Place this at the root of your C++ project as `.clang-format`
+# It controls automatic code formatting with clang-format
+
+# ---------------- Base style ----------------
+# You can use LLVM, Google, Chromium, Microsoft, Mozilla, WebKit
+# Or None if you want to define everything manually
+BasedOnStyle: LLVM
+
+# Language specific overrides
+Language: Cpp
+
+# Indentation
+IndentWidth: 4 # Number of spaces per indent level
+TabWidth: 4 # Number of spaces per tab
+UseTab: Never # Never use literal tab characters; use spaces
+IndentCaseLabels: true # Indent 'case:' labels in switch statements
+
+# Braces / Block formatting
+BreakBeforeBraces: Allman
+# Options:
+#   Attach        -> { on same line as function or control stmt
+#   Linux         -> { on new line for functions, same line for others
+#   Stroustrup    -> New line for functions/structs/classes, else attach
+#   Allman        -> Always put braces on a new line
+#   Whitesmiths   -> Braces indented one level
+#   Banner        -> Place braces in a banner style (rare)
+AllowShortFunctionsOnASingleLine: Empty # Do not put short functions on one line
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakTemplateDeclarations: true
+
+# Column width / line breaks
+ColumnLimit: 125 # Maximum line length before breaking
+AllowAllParametersOfDeclarationOnNextLine: true
+BreakBeforeBinaryOperators: NonAssignment # Break before operators except '='
+BreakAfterJavaFieldAnnotations: false
+
+# Pointer/reference alignment
+PointerAlignment: Left # Can be Left, Right, or Middle
+# Left: `int* ptr;`  | Right: `int *ptr;` | Middle: `int * ptr;`
+DerivePointerAlignment: false
+
+# Spaces around operators
+SpacesBeforeTrailingComments: 1
+SpaceAfterCStyleCast: true
+SpaceAfterTemplateKeyword: true
+SpaceBeforeParens: ControlStatements # Controls space before parentheses in 'if', 'for', etc.
+
+# Namespace / class formatting
+NamespaceIndentation: All # Indent namespace content (None, Inner, All)
+IndentPPDirectives: AfterHash # Preprocessor directives indentation
+
+# Includes
+IncludeBlocks: Preserve # Grouping of includes (Preserve, Merge, Regroup)
+SortIncludes: false # Set true if you want includes automatically sorted
+
+# Alignment of assignments / colons
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Left
+
+# Constructor initializer lists
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BinPackArguments: false # Place each function argument on its own line
+BinPackParameters: false
+AllowAllConstructorInitializersOnNextLine: true
+
+# Miscellaneous
+AllowShortEnumsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+ReflowComments: true # Reflow multi-line comments to fit column width
+SortUsingDeclarations: false
+CommentPragmas: "^ IWYU pragma:" # Regex for comments that should not be reformatted

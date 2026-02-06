@@ -1,0 +1,251 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "languages": {
+    "CSharp": {
+      "language_servers": ["omnisharp"],
+    },
+  },
+
+  "minimap": {
+    "show": "never",
+  },
+  "terminal": {
+    "dock": "bottom",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "icon_theme": "Material Icon Theme",
+  "base_keymap": "JetBrains",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Ayu Dark",
+
+  "theme_overrides": {
+    "Ayu Dark": {
+      "syntax": {
+        "attribute": {
+          "color": "#9B8C6BFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "boolean": {
+          "color": "#C4B28AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "comment": {
+          "color": "#5E6469FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "comment.doc": {
+          "color": "#6E7A80FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "constant": {
+          "color": "#C4B28AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "constructor": {
+          "color": "#8FA6B8FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "embedded": {
+          "color": "#B5B8BAFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "emphasis": {
+          "color": "#8FA6B8FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "emphasis.strong": {
+          "color": "#8FA6B8FF",
+          "font_style": null,
+          "font_weight": 700,
+        },
+        "enum": {
+          "color": "#C4B28AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "function": {
+          "color": "#A3B5A4FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "hint": {
+          "color": "#5F8A8BFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "keyword": {
+          "color": "#C9A227FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "label": {
+          "color": "#7E8F9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "link_text": {
+          "color": "#C4B28AFF",
+          "font_style": "italic",
+          "font_weight": null,
+        },
+        "link_uri": {
+          "color": "#5F8A8BFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "namespace": {
+          "color": "#7E8F9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "number": {
+          "color": "#B86A2EFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "operator": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "predictive": {
+          "color": "#6E7A80FF",
+          "font_style": "italic",
+          "font_weight": null,
+        },
+        "preproc": {
+          "color": "#7A2E2EFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "primary": {
+          "color": "#B5B8BAFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "property": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation.bracket": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation.delimiter": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation.list_marker": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation.markup": {
+          "color": "#9A9A9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "punctuation.special": {
+          "color": "#C9A227FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "selector": {
+          "color": "#B5B8BAFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "selector.pseudo": {
+          "color": "#C9A227FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "string": {
+          "color": "#7A9F7AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "string.escape": {
+          "color": "#C9A227FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "string.regex": {
+          "color": "#5F8A8BFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "string.special": {
+          "color": "#9B8C6BFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "string.special.symbol": {
+          "color": "#C4B28AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "tag": {
+          "color": "#8FA6B8FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "text.literal": {
+          "color": "#C4B28AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "title": {
+          "color": "#B5B8BAFF",
+          "font_style": null,
+          "font_weight": 700,
+        },
+        "type": {
+          "color": "#8FA6B8FF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "variable": {
+          "color": "#B5B8BAFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+        "variant": {
+          "color": "#7E8F9AFF",
+          "font_style": null,
+          "font_weight": null,
+        },
+      },
+    },
+  },
+}

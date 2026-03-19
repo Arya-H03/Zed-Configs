@@ -9,95 +9,92 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
     },
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Dock || Panel || Editor",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-f": "editor::Format",
+    },
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+    },
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "Editor && (showing_completions || showing_code_actions)",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "context": "Editor && (showing_completions || showing_code_actions)",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
     },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-shift-t": "workspace::NewTerminal"
-    }
+      "ctrl-s ctrl-t": "task::Spawn",
+    },
   },
   {
-    "context": "Editor",
     "bindings": {
-      "ctrl-alt-f": "editor::Format"
-    }
+      "ctrl-alt-v": "workspace::ToggleVimMode",
+    },
   },
   {
-    "context": "Editor",
+    "context": "vim_mode",
     "bindings": {
-      "ctrl-e ctrl-right": [
-        "editor::MoveToEndOfLine",
-        {
-          "stop_at_soft_wraps": true
-        }
-      ]
-    }
+      "ctrl-shift-s": "workspace::SaveAll",
+    },
   },
   {
-    "context": "Editor",
+    "context": "(VimControl && !menu)",
     "bindings": {
-      "ctrl-e ctrl-left": [
-        "editor::MoveToBeginningOfLine",
-        {
-          "stop_at_soft_wraps": true,
-          "stop_at_indent": true
-        }
-      ]
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-shift-e ctrl-shift-right": [
-        "editor::SelectToEndOfLine",
-        {
-          "stop_at_soft_wraps": true
-        }
-      ]
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-shift-e ctrl-shift-left": [
-        "editor::SelectToBeginningOfLine",
-        {
-          "stop_at_soft_wraps": true,
-          "stop_at_indent": true
-        }
-      ]
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-d ctrl-f": "editor::GoToDefinition"
-    }
-  },
-  {
-    "context": "Editor",
-      "bindings": {
-      "ctrl-d ctrl-c": "editor::GoToDeclaration"
-    }
+      "ctrl-p ctrl-s": "project_symbols::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-s ctrl-t": "task::Spawn"
-    }
+      "ctrl-b ctrl-d": "workspace::ToggleBottomDock",
+    },
   },
   {
-    "context": "Editor",
+    "context": "Workspace",
     "bindings": {
-      "ctrl-r ctrl-r": "editor::Rename"
-    }
-  }
+      "ctrl-l ctrl-d": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-r ctrl-d": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-g ctrl-p": "git_panel::Toggle",
+    },
+  },
 ]

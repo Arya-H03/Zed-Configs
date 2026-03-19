@@ -7,6 +7,87 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "fixed",
+    "line_width": 1,
+    "enabled": true,
+  },
+  "hard_tabs": false,
+  "inlay_hints": {
+    "enabled": false
+  },
+  "show_whitespaces": "selection",
+  "use_on_type_format": true,
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  "show_wrap_guides": true,
+  "auto_indent_on_paste": true,
+  "auto_indent": "syntax_aware",
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": true,
+    },
+    "show": "never",
+  },
+  "inline_code_actions": true,
+  "gutter": {
+    "folds": true,
+    "runnables": true,
+  },
+  "relative_line_numbers": "disabled",
+  "show_signature_help_after_edits": true,
+  "auto_signature_help": true,
+  "outline_panel": {
+    "button": true,
+  },
+  "project_panel": {
+    "auto_fold_dirs": true,
+    "scrollbar": {
+      "show": "never",
+    },
+    "sticky_scroll": false,
+    "diagnostic_badges": true,
+    "indent_guides": {
+      "show": "never",
+    },
+    "hide_hidden": false,
+    "hide_root": true,
+    "bold_folder_labels": false,
+    "auto_reveal_entries": true,
+    "folder_icons": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "dock": "left",
+  },
+  "toolbar": {
+    "code_actions": true,
+    "selections_menu": false,
+    "quick_actions": true,
+    "breadcrumbs": true,
+    "agent_review": true,
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "bottom_dock_layout": "contained",
+  "agent": {
+    "button": true,
+    "dock": "right",
+    "favorite_models": [],
+    "single_file_review": false,
+    "model_parameters": [],
+  },
+  "disable_ai": true,
+  "edit_predictions": {
+    "mode": "eager",
+    "provider": "zed",
+  },
+  "show_edit_predictions": true,
+  "vim_mode": false,
   "languages": {
     "CSharp": {
       "language_servers": ["omnisharp"],
@@ -26,10 +107,10 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Monospace Icon Theme - Dark",
   "base_keymap": "JetBrains",
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 14,
   "theme": "Ayu Dark",
 
   "theme_overrides": {
@@ -37,213 +118,126 @@
       "syntax": {
         "attribute": {
           "color": "#9B8C6BFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "boolean": {
           "color": "#C4B28AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "comment": {
           "color": "#5E6469FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "comment.doc": {
           "color": "#6E7A80FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "constant": {
           "color": "#C4B28AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "constructor": {
           "color": "#8FA6B8FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "embedded": {
           "color": "#B5B8BAFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "emphasis": {
-          "color": "#8FA6B8FF",
-          "font_style": null,
-          "font_weight": null,
-        },
-        "emphasis.strong": {
-          "color": "#8FA6B8FF",
-          "font_style": null,
-          "font_weight": 700,
+          "color": "#74ADE8FF",
         },
         "enum": {
           "color": "#C4B28AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "function": {
           "color": "#A3B5A4FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "hint": {
           "color": "#5F8A8BFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "keyword": {
           "color": "#C9A227FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "label": {
           "color": "#7E8F9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "link_text": {
           "color": "#C4B28AFF",
-          "font_style": "italic",
-          "font_weight": null,
         },
         "link_uri": {
           "color": "#5F8A8BFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "namespace": {
           "color": "#7E8F9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "number": {
-          "color": "#B86A2EFF",
-          "font_style": null,
-          "font_weight": null,
+          "color": "#BF956AFF",
         },
         "operator": {
           "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "predictive": {
           "color": "#6E7A80FF",
-          "font_style": "italic",
-          "font_weight": null,
         },
         "preproc": {
           "color": "#7A2E2EFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "primary": {
-          "color": "#B5B8BAFF",
-          "font_style": null,
-          "font_weight": null,
+          "color": "#ACB2BEFF",
         },
         "property": {
           "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "punctuation": {
-          "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
+          "color": "#ACB2BEFF",
         },
         "punctuation.bracket": {
           "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "punctuation.delimiter": {
-          "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
+          "color": "#B2B9C6FF",
         },
         "punctuation.list_marker": {
           "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "punctuation.markup": {
           "color": "#9A9A9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "punctuation.special": {
           "color": "#C9A227FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "selector": {
           "color": "#B5B8BAFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "selector.pseudo": {
           "color": "#C9A227FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "string": {
           "color": "#7A9F7AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "string.escape": {
           "color": "#C9A227FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "string.regex": {
           "color": "#5F8A8BFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "string.special": {
           "color": "#9B8C6BFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "string.special.symbol": {
-          "color": "#C4B28AFF",
-          "font_style": null,
-          "font_weight": null,
+          "color": "#BF956AFF",
         },
         "tag": {
           "color": "#8FA6B8FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "text.literal": {
           "color": "#C4B28AFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "title": {
-          "color": "#B5B8BAFF",
-          "font_style": null,
-          "font_weight": 700,
+          "color": "#D07277FF",
         },
         "type": {
           "color": "#8FA6B8FF",
-          "font_style": null,
-          "font_weight": null,
         },
         "variable": {
           "color": "#B5B8BAFF",
-          "font_style": null,
-          "font_weight": null,
         },
         "variant": {
           "color": "#7E8F9AFF",
-          "font_style": null,
-          "font_weight": null,
         },
       },
     },

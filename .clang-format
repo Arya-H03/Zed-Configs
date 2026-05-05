@@ -1,39 +1,27 @@
-# clang-format configuration file
-# Place this at the root of your C++ project as `.clang-format`
-# It controls automatic code formatting with clang-format
-
-# ---------------- Base style ----------------
-# You can use LLVM, Google, Chromium, Microsoft, Mozilla, WebKit
-# # Language specific overrides
 Language: Cpp
 
 # Indentation
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
-AccessModifierOffset: -4
+AccessModifierOffset: -2
 IndentCaseLabels: true
+IndentPPDirectives: AfterHash
 NamespaceIndentation: None
+LambdaBodyIndentation: Signature
 
-# Braces (Allman style)
+# Braces
 BreakBeforeBraces: Allman
-BraceWrapping:
-  AfterClass: true
-  AfterControlStatement: Always
-  AfterFunction: true
-  AfterNamespace: true
-  AfterStruct: true
-  AfterEnum: true
-  BeforeElse: true
 
 # Line length
-ColumnLimit: 100
+ColumnLimit: 140
 
 # Alignment
-AlignConsecutiveAssignments: Consecutive
-AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
 AlignTrailingComments: true
 PointerAlignment: Left
+DerivePointerAlignment: false
 
 # Spaces
 SpaceBeforeParens: ControlStatements
@@ -43,18 +31,20 @@ SpacesInParentheses: false
 SpaceAfterCStyleCast: false
 
 # Breaking long lines
-AllowShortFunctionsOnASingleLine: All # Put short functions on one line
-AllowShortIfStatementsOnASingleLine: AllIfsAndElse
-AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: false
 AllowShortBlocksOnASingleLine: Empty
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: BeforeColon
+AlwaysBreakTemplateDeclarations: Yes
 
 # Includes
-SortIncludes: CaseInsensitive
+SortIncludes: CaseSensitive
 IncludeBlocks: Regroup
 
 # Misc
 Cpp11BracedListStyle: true
 FixNamespaceComments: true
 ReflowComments: true
+MaxEmptyLinesToKeep: 2

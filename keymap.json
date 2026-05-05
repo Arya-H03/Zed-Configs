@@ -1,10 +1,3 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
     "context": "Workspace",
@@ -28,17 +21,18 @@
     },
   },
   {
-    "context": "Picker > Editor",
+    "context": "Picker || Menu || Editor",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
     },
   },
   {
-    "context": "Picker > Editor",
+    "context": "Picker || Menu || Editor",
     "bindings": {
       "ctrl-k": "menu::SelectPrevious",
     },
   },
+
   {
     "context": "Editor && (showing_completions || showing_code_actions)",
     "bindings": {
@@ -97,4 +91,17 @@
       "ctrl-g ctrl-p": "git_panel::Toggle",
     },
   },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-f ctrl-s": "buffer_search::Deploy"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-f": "buffer_search::Deploy"
+    }
+  }
 ]
+
